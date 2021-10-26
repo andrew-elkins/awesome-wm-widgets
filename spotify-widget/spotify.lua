@@ -144,7 +144,7 @@ local function worker(user_args)
         spotify_widget:connect_signal('mouse::enter', function()
             spotify_tooltip.markup = '<b>Album</b>: ' .. cur_album
                 .. '\n<b>Artist</b>: ' .. cur_artist
-                .. '\n<b>Song</b>: ' .. cur_title
+                .. ':\n<b>Song</b>: ' .. cur_title
         end)
     end
 
