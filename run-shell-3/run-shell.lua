@@ -57,12 +57,12 @@ function widget.new()
                     layout = wibox.layout.fixed.horizontal
                 },
                 widget = wibox.container.background,
-                bg = '#333333',
+                bg = '#2b2640',
                 shape = function(cr, width, height)
                     gears.shape.rounded_rect(cr, width, height, 3)
                 end,
-                shape_border_color = '#74aeab',
-                shape_border_width = 1,
+                shape_border_color = '#686193',
+                shape_border_width = 3,
                 forced_width = 200,
                 forced_height = 50
             },
@@ -90,7 +90,7 @@ function widget.new()
                 awful.placement.top(w, { margins = { top = 20 }, parent = awful.screen.focused() })
                 awful.prompt.run {
                     prompt = 'Run: ',
-                    bg_cursor = '#74aeab',
+                    bg_cursor = '#686193',
                     textbox = run_shell.widget,
                     completion_callback = completion.shell,
                     exe_callback = function(...)
